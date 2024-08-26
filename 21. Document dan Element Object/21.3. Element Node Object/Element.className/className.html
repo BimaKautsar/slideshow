@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .merah{
+            color: red;
+        }
+        .hijau{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="judul" class="merah">Belajar Javascript</h1>
+    <script>
+        let judulNode = document.getElementById("judul");
+        console.log(judulNode.className);
+
+        judulNode.className = "hijau";
+        console.log(judulNode.className)
+    </script>
+</body>
+</html>

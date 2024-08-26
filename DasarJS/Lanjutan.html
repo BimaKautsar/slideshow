@@ -1,0 +1,648 @@
+<!-- class mobil -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {}
+
+      let mobilAndi = new mobil();
+      let mobilJoko = new mobil();
+
+      console.log(mobilAndi instanceof mobil);
+      console.log(mobilJoko instanceof mobil);
+      console.log(mobilJoko instanceof string);
+    </script>
+  </body>
+</html> -->
+
+<!-- class mobil property -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor() {
+          this.nama = "Mazda";
+          this.tipe = "Honda";
+          this.harga = "225000000";
+        }
+      }
+
+      let mobilAndi = new mobil();
+      console.log(mobilAndi.nama);
+
+      let mobiJoko = new mobil();
+      console.log(mobilJoko.harga);
+
+      let mobilAlex = new mobil();
+      console.log(mobilAlex.tipe);
+    </script>
+  </body>
+</html> -->
+
+<!-- class mobil parameter constructor -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor(namaArg, tipeArg, hargaArg) {
+          this.nama = namaArg;
+          this.tipe = tipeArg;
+          this.harga = hargaArg;
+        }
+      }
+
+      let mobilAndi = new mobil("lambo", "mvp", "90000000");
+      console.log(mobilAndi.nama);
+      console.log(mobilAndi.tipe);
+      console.log(mobilAndi.harga);
+
+      let mobilJoko = new mobil("xenia", "honda", "5000000");
+      console.log(mobilJoko.nama);
+      console.log(mobilJoko.harga);
+
+      let mobilAlex = new mobil("fortuner", "turbo", "7000000");
+      console.log(mobilAlex.tipe);
+    </script>
+  </body>
+</html> -->
+
+<!-- class mobil method -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor(nama, tipe, harga) {
+          this.nama = nama;
+          this.tipe = tipe;
+          this.harga = harga;
+        }
+        hidupkan() {
+          return "Mesin di hidupkan";
+        }
+      }
+      let mobilAndi = new mobil("Lamborgini", "turbo", 10000000000000);
+      console.log(mobilAndi.nama);
+      console.log(mobilAndi.hidupkan());
+
+      let mobilJoko = new mobil(" calya", "sedan", 200000000);
+      console.log(mobilJoko.nama);
+      console.log(mobilJoko.harga);
+      console.log(mobilJoko.hidupkan());
+    </script>
+  </body>
+</html> -->
+
+<!-- class mobil method 2 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor(nama, tipe, harga) {
+          this.nama = nama;
+          this.tipe = tipe;
+          this.harga = harga;
+        }
+
+        hidupkan() {
+          return `mesin ${this.nama} dihidupkan`;
+        }
+      }
+
+      let mobilAndi = new mobil("Lamborgini", "turbo", 10000000000000);
+      console.log(mobilAndi.nama);
+      console.log(mobilAndi.hidupkan());
+
+      let mobilJoko = new mobil("calya", "sedan", 200000000);
+      console.log(mobilJoko.nama);
+      console.log(mobilJoko.harga);
+      console.log(mobilJoko.hidupkan());
+    </script>
+  </body>
+</html> -->
+
+<!-- class mobil method parameter -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor(nama, tipe, harga) {
+          this.nama = nama;
+          this.tipe = tipe;
+          this.harga = harga;
+        }
+        hidupkan() {
+          return `Mesin ${this.nama} di hidupkan`;
+        }
+        pergi(tempat) {
+          return `pergi ke ${tempat} dengan ${this.nama}`;
+        }
+      }
+
+      let mobilAndi = new mobil("calya", "MPV", "250000000");
+      console.log(mobilAndi.nama);
+      console.log(mobilAndi.pergi("medan"));
+
+      let mobilJoko = new mobil("Pajero", "Sedan", 550000000);
+      console.log(mobilJoko.nama);
+      console.log(mobilJoko.pergi("aceh"));
+    </script>
+  </body>
+</html> -->
+
+<!-- class method arrow notation -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor(nama, tipe, harga) {
+          this.nama = nama;
+          this.tipe = tipe;
+          this.harga = harga;
+          this.hidupkan = () => `mesin mobil ${nama} di hidupkan `;
+        }
+      }
+      let mobilAlex = new mobil("Daihatsu Xenia", "MPV", 350000000);
+      console.log(mobilAlex.nama);
+      console.log(mobilAlex.hidupkan());
+    </script>
+  </body>
+</html> -->
+
+<!-- dengan getter_setter -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor(nama, tipe, harga) {
+          this.nama = nama;
+        }
+
+        get namamobil() {
+          return this.nama;
+        }
+
+        set namamobil(x) {
+          this.nama = x;
+        }
+      }
+
+      let mobilAlex = new mobil("mitsubishi pajero sport");
+      console.log(mobilAlex.namamobil);
+
+      mobilAlex.namamobil = "Toyota Fortuner";
+      console.log(mobilAlex.namamobil);
+
+      mobilAlex.namamobil("Toyota Fortuner");
+    </script>
+  </body>
+</html> -->
+
+<!-- fungsi getter_setter -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        constructor(nama, tipe, harga) {
+          this.nama = nama;
+          this.tipe = tipe;
+          this.harga = harga;
+        }
+
+        get namamobil() {
+          return this.nama.toUpperCase();
+        }
+
+        set namamobil(x) {
+          this.nama = "Mobil " + x;
+        }
+      }
+
+      let mobilAndi = new mobil("Mitsubishi Pajero", "Suv", 90000000000);
+      console.log(mobilAndi.namamobil);
+
+      mobilAndi.namamobil = "Toyota Fortuner";
+      console.log(mobilAndi.namamobil);
+    </script>
+  </body>
+</html> -->
+
+<!-- inheritance (penurunan) -->
+
+<!-- inheritance method -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        infomobil() {
+          return "ini dari kelas mobil";
+        }
+      }
+
+      class bus extends mobil {
+        infobus() {
+          return "ini dari kelas bus";
+        }
+      }
+
+      let busAgus = new bus();
+      console.log(busAgus.infomobil());
+      console.log(busAgus.infobus());
+    </script>
+  </body>
+</html> -->
+
+<!-- inheritance method super -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        infomobil() {
+          return "dari class mobil";
+        }
+      }
+
+      class bus extends mobil {
+        infobus() {
+          return "ini dari class bus dan juga " + super.infomobil();
+        }
+      }
+
+      let busagus = new bus();
+      console.log(busagus.infobus());
+    </script>
+  </body>
+</html> -->
+
+<!-- inheritance_property_super -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Mobil {
+        constructor(nama) {
+          this.nama = nama;
+        }
+        infoMobil() {
+          return `Mobil ${this.nama}`;
+        }
+      }
+
+      class Bus extends Mobil {
+        constructor(nama) {
+          super(nama);
+        }
+
+        infoBus() {
+          return `Bus ${this.nama}`;
+        }
+      }
+
+      let busBobi = new Bus("Scania K360TB");
+      console.log(busBobi.infoBus()); // Bus Scania K360TB
+      console.log(busBobi.infoMobil()); // Mobil Scania K360TB
+    </script>
+  </body>
+</html> -->
+<!-- inheritance (penurunan) selesai -->
+
+<!-- Static Property dan Static Method -->
+
+<!-- static_property_dan_method -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class mobil {
+        static warna = "Biru";
+        static infomobil() {
+          return "ini dari class mobil";
+        }
+      }
+
+      console.log(mobil.warna);
+      console.log(mobil.infomobil());
+
+      let mobiladi = new mobil();
+      console.log(mobiladi.warna);
+      console.log(mobiladi.infomobil());
+    </script>
+  </body>
+</html> -->
+
+<!-- Prototype Based Language -->
+<!-- constructor_function -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Mobil(nama, tipe, harga) {
+        this.nama = nama;
+        this.tipe = tipe;
+        this.harga = harga;
+      }
+      let mobilAndi = new Mobil("Daihatsu Xenia", "MPV", 220000000);
+      let mobilJoko = new Mobil("Toyota Camry", "Sedan", 750000000);
+      console.log(mobilAndi.nama); // Daihatsu Xenia
+      console.log(mobilJoko.nama); // Toyota Camry
+
+      console.log(mobilAndi instanceof Mobil); // true
+      console.log(mobilJoko instanceof Mobil); // true
+    </script>
+  </body>
+</html> -->
+<!-- Prototype Based Language Selesai-->
+
+<!-- Perbedaan this dalam Arrow Notation -->
+<!-- object this -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      object_this.html;
+      let mobilRudi = {
+        nama: "Mitsubishi Expander",
+        tipe: "MPV",
+        harga: 300000000,
+        warna: "merah",
+        hidupkan() {
+          return `Mesin ${this.nama} dihidupkan`;
+        },
+      };
+      console.log(mobilRudi.hidupkan());
+    </script>
+  </body>
+</html> -->
+
+<!--  Method call(), apply(), dan bind() -->
+<!-- call apply -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const cekJudul = function () {
+        return this.judul;
+      };
+      let buku1 = {
+        judul: "JavaScript Uncover",
+      };
+      let buku2 = {
+        judul: "React Uncover",
+      };
+
+      console.log(cekJudul.call(buku1)); // JavaScript Uncover
+      console.log(cekJudul.apply(buku1)); // JavaScript Uncover
+
+      console.log(cekJudul.call(buku2)); // React Uncover
+      console.log(cekJudul.apply(buku2)); // React Uncover
+    </script>
+  </body>
+</html> -->
+
+<!-- bind -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const tambah = function (a, b) {
+        return this.num + a + b;
+      };
+      let obj = {
+        num: 10,
+      };
+      let funcTambah = tambah.bind(obj, 5, 7);
+      console.log(funcTambah()); // 22
+    </script>
+  </body>
+</html> -->
+
+<!--  Object Bawaan JavaScript   -->
+<!-- native_object_javascript -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Number("52");
+      let hasil = foo + 25;
+      console.log(hasil); // 77
+      let bar = new String("Belajar JavaScript");
+      let sambung = "Sedang " + bar;
+      console.log(sambung); // Sedang Belajar JavaScript
+    </script>
+  </body>
+</html> -->
+
+<!-- native_object_javascript_method -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Number("52");
+      console.log(foo.toString(16)); // 34
+      console.log(foo.toExponential(2)); // 5.20e+1
+
+      let bar = new String("Belajar JavaScript");
+      console.log(bar.toUpperCase()); // BELAJAR JAVASCRIPT
+      console.log(bar.toLowerCase()); // belajar javascript
+      console.log(bar.substr(3, 9)); // ajar Java
+    </script>
+  </body>
+</html> -->
+
+<!-- native object JS function -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tambah = new Function("a", "b", "return a + b");
+
+      console.log(tambah(3, 5));
+      console.log(tambah.length);
+    </script>
+  </body>
+</html> -->
+
+<!-- native_object_javascript_tipe_data_primitif -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = 52;
+      console.log(foo.toString(16)); // 34
+      console.log(foo.toExponential(2)); // 5.20e+1
+
+      let bar = "Belajar JavaScript";
+      console.log(bar.toUpperCase()); // BELAJAR JAVASCRIPT
+      console.log(bar.toLowerCase()); // belajar javascript
+      console.log(bar.substr(3, 9)); // ajar Java
+    </script>
+  </body>
+</html> -->
+
+<!-- number object -->
+<!-- contoh_static_property_method -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+      console.log(Number.isInteger("A")); // false
+      console.log(Number.isInteger(12)); // true
+    </script>
+  </body>
+</html> -->
+
+<!-- instance_method_dan_property_tipe_primitif -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = 5.123456;
+      console.log(foo.toPrecision(3)); // 5.12
+
+      let bar = "Selamat Belajar JavaScript";
+      console.log(bar.length); // 26
+    </script>
+  </body>
+</html> -->
+
+<!-- number_static_property. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(Number.EPSILON);
+    </script>
+  </body>
+</html> -->
+
+

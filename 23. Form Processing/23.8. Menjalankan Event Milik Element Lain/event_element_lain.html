@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="tombol1">Tombol1</button>
+    <button id="tombol2">Tombol2</button>
+    <script>
+      let tombol1Node = document.getElementById("tombol1");
+      let tombol2Node = document.getElementById("tombol2");
+      tombol1Node.addEventListener("click", (e) => {
+        alert(e.target.id);
+      });
+      tombol2Node.addEventListener("click", () => {
+        tombol1Node.click();
+      });
+    </script>
+  </body>
+</html>

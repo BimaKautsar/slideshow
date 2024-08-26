@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let h1Node = document.querySelector("h1");
+
+        const cektanggal = () =>{
+            let mydate = new Date();
+
+            let jam = mydate.getHours();
+            let menit = mydate.getMinutes();
+            let detik = mydate.getSeconds();
+
+            h1Node.innerHTML = "Waktu saat ini = "+jam+":"+menit+":"+detik;
+        }
+
+        cektanggal();
+        setInterval(cektanggal,1000);
+    </script>
+</body>
+</html>

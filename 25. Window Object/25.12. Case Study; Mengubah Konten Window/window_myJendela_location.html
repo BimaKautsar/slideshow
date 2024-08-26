@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Mengubah Konten Window</h1>
+    <button id="buka">Buka Jendela</button>
+    <button id="edit">Edit Jendela</button>
+    <button id="tutup">Tutup Jendela</button>
+    <script>
+      let buka = document.getElementById("buka");
+      let edit = document.getElementById("edit");
+      let tutup = document.getElementById("tutup");
+      let myJendela;
+
+      const bukaJendela = () => {
+        let setting = "width=500,height=500,left=500,toolbar=yes";
+        myJendela = open("https://www.google.com", "bukaJendela", setting);
+      };
+
+      const editJendela = () => {
+        myJendela = "https://developer.mozilla.org";
+      };
+
+      const tutupJendela = () => {
+        myJendela.close();
+      };
+
+      buka.addEventListener("click", bukaJendela);
+      edit.addEventListener("click", editJendela);
+      tutup.addEventListener("click", tutupJendela);
+    </script>
+  </body>
+</html>

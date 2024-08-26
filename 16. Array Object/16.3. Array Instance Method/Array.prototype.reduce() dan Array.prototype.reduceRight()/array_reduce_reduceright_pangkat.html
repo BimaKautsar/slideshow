@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const pangkat2 = (total, angka) => total + Math.pow(angka, 2);
+
+      let foo = [5, 7, 14];
+      console.log(foo.reduce(pangkat2)); // 250
+      console.log(foo.reduce(pangkat2, 0)); // 270
+
+      console.log(foo.reduceRight(pangkat2)); // 88
+      console.log(foo.reduceRight(pangkat2, 0)); // 270
+    </script>
+  </body>
+</html>

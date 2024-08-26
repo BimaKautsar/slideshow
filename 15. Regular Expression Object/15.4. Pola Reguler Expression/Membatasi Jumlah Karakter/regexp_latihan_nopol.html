@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let pola = /[A-Z]{2}[0-9]{1,4}[A-Z]{1,3}/;
+      console.log(pola.test("BM12345ARA"));
+      console.log(pola.test("B99XYZ"));
+      console.log(pola.test("BA99XYZ"));
+      console.log(pola.test("Belajar BA99XYZ"));
+    </script>
+  </body>
+</html>

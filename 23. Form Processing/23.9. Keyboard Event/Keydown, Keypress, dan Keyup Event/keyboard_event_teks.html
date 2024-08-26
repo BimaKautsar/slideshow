@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Ketik disini: <input type="text" id="ketik" /></p>
+    <p>Hasil keydown: <span id="hasilKeydown"></span></p>
+    <p>Hasil keypress: <span id="hasilKeyPress"></span></p>
+    <p>Hasil keyup: <span id="hasilKeyUp"></span></p>
+    <script>
+      let ketikNode = document.getElementById("ketik");
+      let hasilKeydownNode = document.getElementById("hasilKeydown");
+      let hasilKeyPressNode = document.getElementById("hasilKeyPress");
+      let hasilKeyUpNode = document.getElementById("hasilKeyUp");
+
+      const diKeydown = () => {
+        hasilKeydownNode.innerHTML = ketikNode.value;
+      };
+      const diKeypress = () => {
+        hasilKeyPressNode.innerHTML = ketikNode.value;
+      };
+      const diKeyup = () => {
+        hasilKeyUpNode.innerHTML = ketikNode.value;
+      };
+
+      ketikNode.addEventListener("keydown", diKeydown);
+      ketikNode.addEventListener("keypress", diKeypress);
+      ketikNode.addEventListener("keyup", diKeyup);
+    </script>
+  </body>
+</html>

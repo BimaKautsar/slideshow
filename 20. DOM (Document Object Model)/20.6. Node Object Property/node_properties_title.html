@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <p>Sedang belajar <em>JavaScript</em><b> dari Duniailkom</b></p>
+    <script>
+      let pNode = document.childNodes[1].childNodes[2].childNodes[3];
+      let bodyNode = pNode.parentNode;
+      let headNode = bodyNode.previousSibling.previousSibling;
+      let titleNode = headNode.lastChild.previousSibling;
+
+      console.log(titleNode.childNodes); // NodeList [text]
+      console.log(titleNode.firstChild); // " Belajar JavaScript "
+      console.log(titleNode.lastChild); // " Belajar JavaScript "
+      console.log(titleNode.nextSibling); // #text
+      console.log(titleNode.nodeName); // TITLE
+      console.log(titleNode.nodeType); // 1
+      console.log(titleNode.parentNode); // <head>...</head>
+      console.log(titleNode.previousSibling); // #text
+      console.log(titleNode.textContent); // Belajar JavaScript
+    </script>
+  </body>
+</html>

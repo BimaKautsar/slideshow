@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let h1Node = document.querySelector("h1");
+
+        const warna = () => {
+            h1Node.style.color = "red";
+        }
+
+        const warna2 = () => {
+            h1Node.style.color = "yellow";
+        }
+
+        const warna3 = () => {
+            h1Node.style.color = "green";
+        }
+
+        const warna4 = () => {
+            h1Node.style.color = "blue";
+        }
+
+        setTimeout(warna,1000);
+        setTimeout(warna2,2000);
+        setTimeout(warna3,3000);
+        setTimeout(warna4,4000);
+    </script>
+</body>
+</html>

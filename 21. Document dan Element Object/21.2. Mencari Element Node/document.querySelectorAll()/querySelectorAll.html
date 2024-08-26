@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <p>Sedang belajar <em>JavaScript</em><b> dari Duniailkom</b></p>
+    <ol>
+      <li>Belajar HTML</li>
+      <li>Belajar CSS</li>
+      <li>Belajar PHP</li>
+      <li>Belajar JavaScript</li>
+      <li>Belajar MySQL</li>
+    </ol>
+    <script>
+      let kumpulanNode = document.querySelectorAll("li");
+
+      console.log(kumpulanNode); // NodeList(5) [li, li, li, li, li]
+      console.log(kumpulanNode.length); // 5
+
+      let isiNode;
+      for (isiNode of kumpulanNode) {
+        isiNode.textContent = "Belajar Document Object";
+      }
+    </script>
+  </body>
+</html>

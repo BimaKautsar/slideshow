@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let bodyNode = document.childNodes[1].childNodes[2];
+      let h1Node = bodyNode.childNodes[1];
+      let pNode = bodyNode.childNodes[3];
+      let emNode = pNode.childNodes[1];
+      let bNode = pNode.childNodes[2];
+      console.log(pNode.hasChildNodes()); // true
+      console.log(bodyNode.hasChildNodes()); // true
+      console.log(bNode.hasChildNodes()); // true
+      console.log(bNode.firstChild.hasChildNodes()); // false
+    </script>
+  </body>
+</html>

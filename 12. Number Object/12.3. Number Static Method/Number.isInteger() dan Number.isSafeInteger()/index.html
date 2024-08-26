@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let foo ;
+
+        foo = 6 ;
+        console.log( Number.isInteger(foo) );
+        console.log( Number.isSafeInteger(foo) );
+
+        foo = 2.943 ;
+        console.log( Number.isInteger(foo) );
+        console.log( Number.isSafeInteger(foo) );
+
+        foo = 1/4 ;
+        console.log( Number.isInteger(foo) );
+        console.log( Number.isSafeInteger(foo) );
+
+        foo = 9349218908424839 ;
+        console.log( Number.isInteger(foo) );
+        console.log( Number.isSafeInteger(foo) );
+    </script>
+</body>
+</html>

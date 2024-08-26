@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let foo = 5000.123456789;
+
+        console.log( foo.toPrecision() );
+        console.log( foo.toPrecision(1) );
+        console.log( foo.toPrecision(5) );
+        console.log( foo.toPrecision(10) );
+        console.log( foo.toPrecision(15) );
+        console.log( foo.toPrecision(20) );
+
+        console.log( (4.32745).toPrecision(2) );
+        console.log( (500).toPrecision(7) );
+        console.log( (1.23e+6).toPrecision(7) );
+    </script>
+</body>
+</html>

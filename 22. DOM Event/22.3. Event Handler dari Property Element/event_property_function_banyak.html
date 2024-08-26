@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     h1 {
+        border: 2px solid #d2601a;
+        color: #1d3c45;
+        width: 280px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff1e1;
+      }
+      </style>
+</head>
+<body>
+    <h1 id="judul">Thankyou</h1>
+    <p></p>
+    <script>
+        let foo = document.getElementById("judul");
+        let bar = document.querySelector("p");
+
+        foo.onclick = () => {bar.innerHTML = "You'are welcome"};
+        foo.ondblclick = () => {bar.innerHTML = "sama-sama"};
+        foo.oncontextmenu = () => {bar.innerHTML = "podo-podo"};
+    </script>
+</body>
+</html>

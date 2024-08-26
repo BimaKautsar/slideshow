@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = new Array("a", "b", "c", "d", "e");
+      let b = ["a", "b", "c", "d", "e"];
+      let c = "aiueo";
+      let d = 123456;
+      let e = true;
+
+      console.log(Array.isArray(a));            // true
+      console.log(Array.isArray(b));            // true
+      console.log(Array.isArray(c));            // false
+      console.log(Array.isArray(d));            // false
+      console.log(Array.isArray(e));            // false
+      console.log(Array.isArray([1, 2, 3]));    // true
+    </script>
+  </body>
+</html>

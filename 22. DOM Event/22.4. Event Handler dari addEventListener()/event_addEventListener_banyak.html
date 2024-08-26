@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     h1 {
+        border: 2px solid #d2601a;
+        color: #1d3c45;
+        width: 280px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff1e1;
+        cursor: pointer;
+      }
+      </style>
+</head>
+<body>
+    <h1 id="judul">Hello World</h1>
+    <p></p>
+    <script>
+        const tampilkanClik = () =>{
+            document.querySelector("p").innerHTML="Judul di Klik";
+        } 
+        const tampilkanDblClik = () =>{
+            document.querySelector("p").innerHTML="Judul di double Klik";
+        } 
+        const tampilkanContextmenu = () =>{
+            document.querySelector("p").innerHTML="Judul di Klik kanan";
+        } 
+
+        let foo = document.getElementById("judul");
+
+        foo.addEventListener("click",tampilkanClik);
+        foo.addEventListener("dblclick",tampilkanDblClik);
+        foo.addEventListener("contextmenu",tampilkanContextmenu);
+    </script>
+</body>
+</html>

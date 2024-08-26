@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <p>Sedang belajar <em>JavaScript</em><b> dari Duniailkom</b></p>
+    <script>
+      let foo = document.childNodes[1].childNodes[0];
+      
+      console.log(foo.nodeName); // HEAD
+      console.log(foo.nodeType); // 1
+      console.log(foo.childNodes); // NodeList(2) [meta, title]
+      console.log(foo.childNodes.length); // 2
+    </script>
+  </body>
+</html>

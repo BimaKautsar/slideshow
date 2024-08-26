@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formKu" name="formKu" method="get" action="proses.php">
+      <p>Username: <input type="text" name="username" id="username" /></p>
+      <p><input type="submit" name="submit" id="submit" value="Copy Data" /></p>
+    </form>
+    <p>Hasil: <input type="text" id="hasil" /></p>
+    <script>
+      let formNode = document.getElementById("formKu");
+      let usernameNode = document.getElementById("username");
+      let hasilNode = document.getElementById("hasil");
+
+      const diProses = (e) => {
+        e.preventDefault();
+        hasilNode.value = usernameNode.value;
+        hasilNode.disabled = "true";
+      };
+
+      formNode.addEventListener("submit", diProses);
+    </script>
+  </body>
+</html>

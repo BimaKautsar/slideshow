@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+     h1 {
+        border: 2px solid #d2601a;
+        color: #1d3c45;
+        width: 280px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff1e1;
+        cursor: pointer;
+      }
+      </style>
+</head>
+<body>
+    <h1 id="judul">Klik Me</h1>
+    <p></p>
+    <h2></h2>
+    <script>
+        let foo = document.getElementById("judul");
+
+        foo.onclick = () =>{
+            document.querySelector("p").innerHTML = "pesan ini tampil di P";
+            document.querySelector("h2").innerHTML = "pesan ini tampil di h2";
+        }
+    </script>
+</body>
+</html>

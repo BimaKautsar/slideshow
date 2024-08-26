@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let pola = /[^a-e]../;
+
+      console.log(pola.test("abaa"));
+      console.log(pola.test("fba"));
+      console.log(pola.test("1dd"));
+      console.log(pola.test("ddd"));
+      console.log(pola.test(" dd"));
+      console.log(pola.test("belajar"));
+    </script>
+  </body>
+</html>

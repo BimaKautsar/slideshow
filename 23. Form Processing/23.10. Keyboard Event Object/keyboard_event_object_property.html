@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Ketik disini: <input type="text" id="ketik" /></p>
+    <script>
+      let ketikNode = document.getElementById("ketik");
+      const diProses = (e) => {
+        console.log(e.key); // a
+        console.log(e.charCode); // 97
+        console.log(e.keyCode); // 97
+        console.log(e.which); // 97
+        console.log(e.altKey); // false
+        console.log(e.ctrlKey); // false
+        console.log(e.shiftKey); // false
+      };
+
+      ketikNode.addEventListener("keypress", diProses);
+    </script>
+  </body>
+</html>

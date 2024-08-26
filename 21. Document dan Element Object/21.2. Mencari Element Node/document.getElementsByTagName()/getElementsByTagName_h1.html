@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar HTML</h1>
+    <h1>Belajar JavaScript</h1>
+    <p>Sedang belajar <em>JavaScript</em><b> dari Duniailkom</b></p>
+    <script>
+      let h1TagNode = document.getElementsByTagName("h1");
+
+      console.log(h1TagNode); // HTMLCollection(2)
+      console.log(h1TagNode[0].nodeName); // H1
+      console.log(h1TagNode[0].nodeType); // 1
+      console.log(h1TagNode[0].childNodes); // NodeList(1)
+      console.log(h1TagNode[0].textContent); // Belajar HTML
+
+      console.log(h1TagNode[1].nodeName); // H1
+      console.log(h1TagNode[1].nodeType); // 1
+      console.log(h1TagNode[1].childNodes); // NodeList(1)
+      console.log(h1TagNode[1].textContent); // Belajar JavaScript
+    </script>
+  </body>
+</html>

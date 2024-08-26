@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const genap = (element) => (element % 2 === 0 ? element : 0);
+
+      let foo = [8, 4, 7, 9, 3, 2];
+      let bar = foo.map(genap);
+      console.log(bar);
+    </script>
+  </body>
+</html>

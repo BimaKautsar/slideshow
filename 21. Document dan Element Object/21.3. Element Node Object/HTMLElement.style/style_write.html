@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="judul" style="color:Green">
+        Belajar JavaScript
+    </h1>
+    <p style="background-color: #cac8c3; color: white;">
+        Sedang belajar <em>JavaScript</em> dari <b>Planet Mars</b>
+    </p>
+    <script>
+        let judulNode = document.getElementById("judul");
+        judulNode.style.color = "red";
+
+        let pNode = document.querySelector("p");
+        pNode.style.backgroundColor = "Blue";
+        pNode.style.fontSize = "1.4em";
+        pNode.style.textAllign = "center";
+        pNode.style.border = "3px solid red";
+        pNode.style.padding = "20px";
+        pNode.style.width = "400px";
+    </script>
+</body>
+</html>

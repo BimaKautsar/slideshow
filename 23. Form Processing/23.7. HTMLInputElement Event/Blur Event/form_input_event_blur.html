@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Username: <input type="text" id="username" /></p>
+    <p>Email: <input type="text" id="email" /></p>
+    <script>
+      let usernameNode = document.getElementById("username");
+      let emailNode = document.getElementById("email");
+
+      const diFocus = (e) => {
+        e.target.style.backgroundColor = "lightgray";
+      };
+      const diBlur = (e) => {
+        e.target.style.backgroundColor = "palegreen";
+      };
+      usernameNode.addEventListener("focus", diFocus);
+      emailNode.addEventListener("focus", diFocus);
+      usernameNode.addEventListener("blur", diBlur);
+      emailNode.addEventListener("blur", diBlur);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const genap = (element) => element % 2 === 0;
+      let foo = [6, 8, 10, 12, 16];
+      console.log(foo.some(genap)); // true
+
+      let bar = [3, 7, 9, 99, 42];
+      console.log(bar.some(genap)); // true
+      
+      let baz = [3, 7, 9, 99, 41];
+      console.log(baz.some(genap)); // false
+    </script>
+  </body>
+</html>

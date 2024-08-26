@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="judul">Belajar JavaScript</h1>
+    <p>Sedang belajar <em>JavaScript</em><b> dari Duniailkom</b></p>
+    <script>
+      let judulNode = document.getElementById("judul");
+      console.log(judulNode.outerHTML);
+      // <h1 id="judul">Belajar JavaScript</h1>
+      let pNode = document.querySelector("p");
+      console.log(pNode.outerHTML);
+      // <p>Sedang belajar <em>JavaScript</em><b> dari Duniailkom</b></p>
+    </script>
+  </body>
+</html>

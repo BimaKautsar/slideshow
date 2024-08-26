@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let foo = 5000.123456789;
+
+        console.log( foo.toExponential() );
+        console.log( foo.toExponential(1) );
+        console.log( foo.toExponential(5) );
+        console.log( foo.toExponential(10) );
+        console.log( foo.toExponential(15) );
+        console.log( foo.toExponential(20) );
+
+        console.log( 4.32345.toExponential(2) );
+        console.log( (4.32345).toExponential(2) );
+    </script>
+</body>
+</html>

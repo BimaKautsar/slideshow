@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <p>Sedang belajar <em>JavaScript</em><b> dari Duniailkom</b></p>
+    <ol>
+      <li>Belajar HTML</li>
+      <li>Belajar CSS</li>
+      <li>Belajar JavaScript</li>
+    </ol>
+    <ol>
+      <li>Belajar PHP</li>
+      <li>Belajar MySQL</li>
+    </ol>
+    <script>
+      let liTagNode = document.getElementsByTagName("li");
+      console.log(liTagNode); // HTMLCollection(5) [li, li, li, li, li]
+      console.log(liTagNode.length); // 5
+
+      let liNode;
+      for (liNode of liTagNode) {
+        console.log(liNode.textContent);
+      }
+    </script>
+  </body>
+</html>

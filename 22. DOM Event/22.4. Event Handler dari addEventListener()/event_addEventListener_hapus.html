@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+        border: 2px solid #d2601a;
+        color: #1d3c45;
+        width: 280px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff1e1;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <h1 id="judul">Hello</h1>
+    <p></p>
+    <h3></h3>
+    <script>
+        const tampilkan = () => {
+            document.querySelector("p").innerHTML="judul tampil di p";
+        }
+        const tampilkanh3 = () =>{
+            document.querySelector("h3").innerHTML="pesan tampil di h3";
+        }
+
+        let foo = document.getElementById("judul");
+        foo.addEventListener("click",tampilkan);
+        foo.addEventListener("click",tampilkanh3);
+
+        foo.removeEventListener("click",tampilkanh3);
+    </script>
+</body>
+</html>

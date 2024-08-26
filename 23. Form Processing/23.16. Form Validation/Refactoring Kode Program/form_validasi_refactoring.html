@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .error {
+        background-color: pink;
+        border: 1px solid red;
+        width: 300px;
+        text-align: center;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="pesan"></p>
+    <form id="FormKu" name="FormKu" method="get" action="proses.php">
+      <p>Username : <input type="text" name="username" id="username" /></p>
+      <input type="submit" name="submit" id="submit" value="Kirim Data" />
+    </form>
+    <script>
+      const diProses = (e) => {
+        let usernameError = "";
+        if (usernameNode.value.trim() === "") {
+          usernameError = "Username harus diisi";
+        } else if (/\W/.test(usernameNode.value.trim())) {
+          usernameError = "Hanya bisa diisi karakter alfanumerik";
+        } else if (usernameNode.value.trim().length < 6) {
+          usernameError = "Minimal diisi 6 karakter";
+        }
+
+        if (usernameError !== "") {
+          pesanNode.innerHTML = usernameError;
+          pesanNode.className = "error";
+          e.preventDefault();
+        }
+      };
+    </script>
+  </body>
+</html>

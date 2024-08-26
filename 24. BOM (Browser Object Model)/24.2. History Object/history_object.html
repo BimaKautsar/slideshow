@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <p>Jumlah alamat di history: <span id="hasil"></span></p>
+    <button id="back">Back</button>
+    <button id="forward">Forward</button>
+    <button id="back2">Back 2 kali</button>
+    <script>
+      document.getElementById("hasil").innerHTML = history.length;
+       document.getElementById("back").addEventListener("click", () => {
+       history.back();
+       });
+
+       document.getElementById("forward").addEventListener("click",() => {
+       history.forward();
+       });
+
+       document.getElementById("back2").addEventListener("click",() => {
+       history.go(-2);
+       });
+    </script>
+  </body>
+</html>

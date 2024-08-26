@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let foo;
+
+        foo = 5 ;
+        console.log( Number.isFinite(foo) );
+
+        foo = 5.87483 ;
+        console.log( Number.isFinite(foo) );
+
+        foo = 'a' ;
+        console.log( Number.isFinite(foo) );
+
+        foo = 5/0 ;
+        console.log( Number.isFinite(foo) );
+
+        foo = Number.NEGATIVE_INFINITY ;
+        console.log( Number.isFinite(foo) );
+
+        foo = Number.NaN ;
+        console.log( Number.isFinite(foo) );
+    </script>
+</body>
+</html>

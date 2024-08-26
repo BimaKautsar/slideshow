@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <button id="buka">Buka Jendela</button>
+    <button id="tutup">Tutup Jendela</button>
+    <p>
+        <textarea id="kodeEdit"></textarea><br>
+        <button id="Kirim">Kirim</button>
+    </p>
+    <script>
+        let buka = document.getElementById("buka");
+        let tutup = document.getElementById("tutup");
+        let kodeEdit = document.getElementById("kodeEdit");
+        let kirim = document.getElementById("Kirim");
+        let myJendela;
+
+        const JendelaBaru = () => {
+            let setting = "height=500,width=500,left=500";
+            myJendela = open("","JendelaBaru",setting);
+        }
+
+        const KirimPesan = () => {
+            myJendela.document.write(kodeEdit.value);
+        }
+
+        const TutupJendela = () => {
+            myJendela.close();
+        }
+
+        buka.addEventListener("click", JendelaBaru);
+        kodeEdit.addEventListener("click", KirimPesan);
+        tutup.addEventListener("click", TutupJendela);
+    </script>
+</body>
+</html>

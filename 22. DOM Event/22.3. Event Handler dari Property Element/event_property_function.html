@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1 {
+        border: 2px solid #d2601a;
+        color: #1d3c45;
+        width: 280px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff1e1;
+      }
+    </style>
+</head>
+<body>
+    <h1 id="judul">Hello world</h1>
+    <p></p>
+    <script>
+        function tampilkan(){
+            document.querySelector("p").innerHTML = "Hello world telah di klik";
+        }
+
+        let h1Node = document.getElementById("judul");
+        h1Node.onclick = tampilkan;
+    </script>
+</body>
+</html>

@@ -1,0 +1,3968 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="document.getElementById('myH1').innerHTML='Hello Word';">
+      click me !
+    </button>
+    <h1 id="myH1"></h1>
+  </body>
+</html> -->
+
+<!-- internal javascript -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Click me !</button>
+    <h1 id="myH1"></h1>
+    <script>
+        document.getElementById("myButton").addEventListener("click", 
+         () => document.getElementById('myH1').innerHTML='Hello World'
+            );
+ </script>
+</body>
+</html> -->
+
+<!-- exsternal javascript -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="myButton">clik me!</button>
+    <h1 id="myH1"></h1>
+    <script src="kode.js"></script>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="myH1"></h1>
+    <script src="kode1.js"></script>
+    <script src="kode2.js"></script>
+  </body>
+</html> -->
+
+<!-- external defer -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="kode1.js" defer></script>
+    <script src="kode2.js" defer></script>
+  </head>
+  <body>
+    <h1 id="myH1"></h1>
+  </body>
+</html>
+
+<!-- external async -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="kode1.js" async></script>
+    <script src="kode2.js" async></script>
+  </head>
+  <body>
+    <h1 id="myH1"></h1>
+  </body>
+</html>
+
+<!-- console.log -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello Word</h1>
+    <script>
+      console.log("Jangan Lupa Mandi y guuys");
+      console.log(1 + 2 - 3 * 10000);
+      console.log(1 > 100);
+    </script>
+  </body>
+</html>
+
+<!-- noscript -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="myH1"></h1>
+    <script>
+      document.getElementById("myH1").innerHTML = "JavaScript Aktif";
+    </script>
+    <noscript>
+      <h2>
+        JavaScript tidak aktif, mohon diaktifkan untuk bisa mengakses halaman
+        ini
+      </h2>
+    </noscript>
+  </body>
+</html>
+
+<!-- Mengisi nilai variabel -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello Word</h1>
+    <script>
+      let a;
+      a = 1945;
+      console.log(a);
+    </script>
+  </body>
+</html>
+
+<!-- inisialisasi_variabel -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello word</h1>
+    <script>
+      let a = "bima kautsar";
+      console.log(a);
+    </script>
+  </body>
+</html>
+
+<!-- inisialisasi_variabel 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello Word</h1>
+    <script>
+      let a, b;
+      a = "Merdeka";
+      b = 1945;
+
+      console.log(a);
+      console.log(b);
+
+      let c = "Selamat Malam",
+        d = 86;
+
+      console.log(c);
+      console.log(d);
+    </script>
+  </body>
+</html>
+
+<!-- typeless_programming_language -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let bim;
+      bim = "Selamat Pagi";
+      console.log(bim);
+
+      bim = 2008;
+      console.log(bim);
+
+      bim = "Selamat Malam";
+      console.log(bim);
+
+      bim = true;
+      console.log(bim);
+    </script>
+  </body>
+</html>
+
+<!-- typeless_programming_language 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo, bar;
+      foo = "Hello Word";
+      console.log(foo);
+
+      bar = foo;
+      console.log(bar);
+
+      let baz = foo;
+      console.log(baz);
+
+      foo = "halloo dunia";
+      console.log(foo);
+      console.log(bar);
+      console.log(baz);
+    </script>
+  </body>
+</html>
+
+<!-- variabel_tanpa_deklarasi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      bima = "kautsar";
+      console.log(bima);
+
+      angka = 12345678910;
+      console.log(angka);
+    </script>
+  </body>
+</html>
+
+<!-- silent error -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let hargabarang = 12000;
+      let ongkoskirim = 5000;
+      let totalbiaya = hargabarang + ongkoskirim;
+
+      let pajak = (10 / 100) * totalbiaya;
+
+      totalBiaya = totalbiaya + pajak;
+      console.log(totalbiaya);
+    </script>
+  </body>
+</html>
+
+<!-- strict mode (mode ketat aturan) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      let hargabarang = 12000;
+      let ongkoskirim = 5000;
+      let totalbiaya = hargabarang + ongkoskirim;
+
+      let pajak = (10 / 100) * totalbiaya;
+
+      totalBiaya = totalbiaya + pajak;
+      console.log(totalbiaya);
+    </script>
+  </body>
+</html>
+
+<!-- konstanta -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const PI = 3.14;
+      const SALAM_PAGI = "Selamat Pagi";
+
+      console.log(PI);
+      console.log(SALAM_PAGI);
+    </script>
+  </body>
+</html>
+
+<!-- konstanta ERROR -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const PI = 13.4;
+      PI = 3.14 ;
+
+      const SALAM_PAGI;
+      SALAM_PAGI = 'Selamat Pagi';
+
+      console.log(PI);
+      console.log(SALAM_PAGI);
+    </script>
+  </body>
+</html>
+
+<!-- pembuatan_tipe_data_number -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let floo = 100;
+      let bar = -200;
+      let baz = 0.203;
+
+      console.log(floo);
+      console.log(bar);
+      console.log(baz);
+    </script>
+  </body>
+</html>
+
+<!-- scientific notation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let floo = 3e2;
+      let bar = 0.5e-3;
+      let baz = -8.932e8;
+
+      console.log(floo);
+      console.log(bar);
+      console.log(baz);
+    </script>
+  </body>
+</html>
+
+<!-- basis angka -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let floo;
+
+      floo = 999;
+      console.log(floo);
+
+      floo = 0b1111100111;
+      console.log(floo);
+
+      floo = 0o1747;
+      console.log(floo);
+
+      floo = 0o1747;
+      console.log(floo);
+
+      floo = 0x3e7;
+      console.log(floo);
+    </script>
+  </body>
+</html>
+
+<!-- nan_infinity -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = 9 * "a";
+      console.log(foo);
+
+      foo = 9 / "a";
+      console.log(foo);
+
+      foo = 5 / 0;
+      console.log(foo);
+
+      foo = -5 / 0;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- error_pembulatan -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let floo;
+
+      floo = 0.1 + 0.2;
+      console.log(floo);
+    </script>
+  </body>
+</html>
+
+<!-- error_pembulatan 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let floo;
+
+      floo = 0.1 * 10 + 0.2 * 10;
+      console.log(floo / 10);
+    </script>
+  </body>
+</html>
+
+<!-- max_int -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(Number.MAX_SAFE_INTEGER);
+
+      let foo = 9007199254740991 + 1;
+      let bar = 9007199254740991 + 2;
+      let baz = 9007199254740991 + 3;
+
+      console.log(foo);
+      console.log(bar);
+      console.log(baz);
+    </script>
+  </body>
+</html>
+
+<!-- bigint -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let bigfoo = 9007199254740991n + 1n;
+      let bigbar = 9007199254740991n + 2n;
+      let bigbaz = 9007199254740991n + 3n;
+
+      console.log(bigfoo);
+      console.log(bigbar);
+      console.log(bigbaz);
+    </script>
+  </body>
+</html>
+
+<!-- typeof -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = 5;
+      let bar = 0b101;
+      let baz = 0o15;
+      let qux = 0xabc;
+      let quux = 500n;
+
+      console.log(typeof foo);
+      console.log(typeof bar);
+      console.log(typeof baz);
+      console.log(typeof qux);
+      console.log(typeof quux);
+    </script>
+  </body>
+</html>
+
+<!-- pembuatan_tipe_data_string -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = "Hello Word";
+      console.log(foo);
+
+      foo = "selamat sore";
+      console.log(foo);
+
+      foo = "1945";
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- number_vs_string -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = "1945";
+      console.log(typeof foo);
+
+      foo = 1945;
+      console.log(typeof foo);
+    </script>
+  </body>
+</html>
+
+<!-- campur_tanda_kutip -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = "ini hari jum'at";
+      console.log(foo);
+
+      foo = 'Dia berkata : "Bima sedang belajar JavaScript"';
+      console.log(foo);
+
+      foo = "let's go!";
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- escape_character -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = "ini hari jum'at";
+      console.log(foo);
+
+      foo = 'Dia berkata : "Bima sedang belajar JavaScript"';
+      console.log(foo);
+
+      foo = "let's go!";
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- escape_character_backslash -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = "http:\\\\www.duniailkom.com";
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- escape_character_regular -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = "\H\e\l\l\o";
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- unicode -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = "J\u1EA3v\u1EB3\u1E68\u1E09\u1E2D\u1E57\u1E71";
+      console.log(foo);
+
+      let bar = "\u2665 Duniailkom \u2764";
+      console.log(bar);
+    </script>
+  </body>
+</html>
+
+<!-- template string -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = "indonesia";
+      let bar = `Selamat Pagi ${foo}`;
+      console.log(bar);
+
+      let baz = "selamat pagi " + foo;
+      console.log(baz);
+    </script>
+  </body>
+</html>
+
+<!-- template string expression -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(`10 tambah 7 adalah ${10 + 7}`);
+      console.log(`5 kuadrat adalah ${Math.pow(5, 2)}`);
+    </script>
+  </body>
+</html>
+
+<!-- boolean -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = true;
+      let bar = false;
+
+      console.log(foo);
+      console.log(bar);
+    </script>
+  </body>
+</html>
+
+<!-- boolean Eror -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = TRUE;
+      let bar = False;
+
+      console.log(foo);
+      console.log(bar);
+    </script>
+  </body>
+</html>
+
+<!-- NULL -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = null;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- undifined variabel -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- undefined_manual_input -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = "belajar javascript";
+      console.log(foo);
+
+      foo = undefined;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- typeof null_undefined -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = null;
+      console.log(typeof foo);
+
+      let bar = undefined;
+      console.log(typeof bar);
+    </script>
+  </body>
+</html>
+
+<!-- symbol -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let id = Symbol();
+
+      let user = {
+        name: "bima",
+        [id]: 123,
+      };
+
+      console.log(user[id]);
+    </script>
+  </body>
+</html>
+
+<!-- key conflict -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Misal object user berasal dari library yang tidak diketahui strukturnya
+      let user = {
+        name: "John",
+        address: "Jakarta",
+        id: "0634",
+      };
+
+      // Tambah key baru ke dalam user
+      user.id = "1122";
+
+      // data id milik object user akan tertimpa
+      console.log(user.id);
+    </script>
+  </body>
+</html>
+
+<!-- key symbol -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Misal object user berasal dari library yang tidak diketahui strukturnya
+      let user = {
+        name: "John",
+        address: "Jakarta",
+        id: "0634",
+      };
+
+      // Tambah key baru ke dalam user
+      let id = Symbol();
+      user[id] = "1122";
+
+      // data id milik object user masih ada
+      console.log(user.id);
+      console.log(user[id]);
+    </script>
+  </body>
+</html>
+
+<!-- symbol for_in -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let age = Symbol();
+
+      let user = {
+        name: "agus",
+        [age]: 20,
+        addres: "bali",
+        id: "0932",
+      };
+
+      for (let i in user) {
+        console.log(i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- array -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswa = ["joko", "dini", "rian"];
+
+      console.log(siswa[0]);
+      console.log(siswa[1]);
+      console.log(siswa[2]);
+    </script>
+  </body>
+</html>
+
+<!-- contoh array -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = [1, 2, 3, 4, 5];
+      console.log(foo);
+
+      let bar = ["saya", "suka", "ikan"];
+      console.log(bar);
+
+      let baz = ["merdeka", 1945, null, 0.029, false];
+      console.log(baz);
+
+      console.log(typeof baz);
+    </script>
+  </body>
+</html>
+
+<!-- mengubah nilai array -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nama = ["tini", "tono", "tene"];
+
+      nama[0] = "joko";
+      console.log(nama);
+
+      nama[3] = "amel";
+      console.log(nama);
+    </script>
+  </body>
+</html>
+
+<!-- array 2d -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let koordinat = [
+        [1, 2],
+        [3, 4],
+        [5, 6],
+      ];
+
+      console.log(koordinat[0][0]);
+      console.log(koordinat[0][1]);
+
+      console.log(koordinat[1][0]);
+      console.log(koordinat[1][1]);
+
+      console.log(koordinat[2][0]);
+      console.log(koordinat[2][1]);
+    </script>
+  </body>
+</html>
+
+<!-- array 2d latihan -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = [
+        ["sedang", "belajar", "javascript"],
+        ["selamat", "pagi", "dunia"],
+        ["a", "b", "c", "d", "e"],
+      ];
+
+      console.log(foo[1][2]);
+      console.log(foo[2][2]);
+
+      foo[1][1] = "malam";
+      console.log(foo[1]);
+
+      foo[2][5] = "f";
+      foo[2][6] = "g";
+      console.log(foo[2]);
+    </script>
+  </body>
+</html>
+
+<!-- .array_destructuring. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = ["bima", "tono", "tina"];
+      let [a, b, c] = mahasiswa;
+      console.log(a);
+      console.log(b);
+      console.log(c);
+    </script>
+  </body>
+</html>
+
+<!-- set_declaration -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Set();
+
+      foo.add("bima");
+      foo.add(2008);
+      foo.add(true);
+      foo.add(true);
+
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- set_initialization -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Set(["bima", 2008, true]);
+
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- set has -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Set(["bima", 2008, true]);
+
+      console.log(foo.has("bima"));
+      console.log(foo.has(2008));
+      console.log(foo.has(false));
+
+      console.log(foo.size);
+    </script>
+  </body>
+</html>
+
+<!-- set delete -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Set(["bima", 2008, true]);
+
+      // hapus element true
+      foo.delete(true);
+      console.log(foo);
+
+      // hapus semua element
+      foo.clear();
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- weakset -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswa = new WeakSet();
+      let andi = { nama: "andi" };
+      let rudi = { nama: "rudi" };
+      let sari = { nama: "sari" };
+      // tambah element
+      siswa.add(andi);
+      siswa.add(rudi);
+      siswa.add(sari);
+
+      console.log(siswa);
+
+      // cek element
+      console.log(siswa.has(andi));
+      console.log(siswa.has(sari));
+
+      console.log(siswa.size);
+
+      // hapus element
+      siswa.delete(sari);
+      console.log(siswa);
+    </script>
+  </body>
+</html>
+
+<!-- map declaration -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Map();
+
+      // tambah element
+      foo.set(1, 100);
+      foo.set("nama", "bima");
+      foo.set("huruf", ["a", "b", "c"]);
+
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- map akses -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Map();
+
+      // tambah element
+      foo.set(1, 100);
+      foo.set("nama", "bima");
+      foo.set("huruf", ["a", "b", "c"]);
+
+      // akses element
+      console.log(foo.get("nama"));
+      console.log(foo.get("huruf"));
+      console.log(foo.get(1));
+    </script>
+  </body>
+</html>
+
+<!-- map initialization -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Map([
+        [1, 100],
+        ["nama", "bima"],
+        ["huruf", ["a", "b", "c"]],
+      ]);
+
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- map method -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new Map([
+        [1, 100],
+        ["nama", "Siska"],
+        ["huruf", ["a", "b", "c"]],
+      ]);
+      console.log(foo);
+      // Map(3) {1 => 100, 'nama' => 'Siska', 'huruf' => Array(3)}
+
+      // cek element map
+      console.log(foo.has("nama")); // true
+      console.log(foo.has("siswa")); // false
+
+      // cek jumlah element map
+      console.log(foo.size); // 3
+
+      // hapus element map
+      foo.delete("nama");
+      console.log(foo); // Map(2) {1 => 100, 'huruf' => Array(3)}
+
+      // kosongkan map
+      foo.clear();
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- weakmap -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = new WeakMap();
+      let obj1 = {};
+      let obj2 = { 1: "Hello" };
+
+      // tambah element
+      foo.set(obj1, 100);
+      foo.set(obj2, "Siska");
+      console.log(foo); // WeakMap {{…} => 'Siska', {…} => 100}
+
+      // akses element
+      console.log(foo.get(obj1)); // 100
+      console.log(foo.get(obj2)); // Siska
+
+      // cek element
+      console.log(foo.has(obj1)); // true
+      console.log(foo.size); // undefined
+
+      // hapus element
+      foo.delete(obj2);
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- aritmatika -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+      //  positif / plus                                                 //
+      foo = +100;
+      console.log(foo); // 100
+
+      // negatif / minus
+      foo = -22;
+      console.log(foo); // -22
+
+      // penambahan
+      foo = 30 + 5;
+      console.log(foo); // 35
+
+      foo = 3.33 + 9.02;
+      console.log(foo); // 12.35
+
+      foo = 9 * 7;
+      console.log(foo); // 63
+
+      //  eksponensial
+      foo = 9 ** 2;
+      console.log(foo); // 81
+
+      //  div/pembagian
+      foo = 6 + 8 / 2 + 6;
+      console.log(foo); // 16
+
+      //  modulus/sisa hasil bagi
+      foo = 30 % 7;
+      console.log(foo); // 2
+    </script>
+  </body>
+</html>
+
+<!-- aritmatika_urutan_operator -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = 4 + 6 / 5 - 3 * 2 + 3;
+      console.log(foo); // 2.2
+
+      foo = ((4 + 6) / (5 - 3)) * 2 + 3;
+      console.log(foo); // 13
+    </script>
+  </body>
+</html>
+
+<!-- aritmatika_tanda_kurung -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = 10 / 5 + 4.5;
+      console.log(foo); // 6.5
+
+      foo = 10 / 5 + 4.5;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- increment_decrement -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+      foo = 7;
+      console.log(++foo); // 8
+      console.log(foo); // 8
+
+      foo = 7;
+      console.log(foo++); // 7
+      console.log(foo); // 8
+
+      foo = 7;
+      console.log(--foo); // 6
+      console.log(foo); // 6
+
+      foo = 7;
+      console.log(foo--); // 7
+      console.log(foo); // 6
+    </script>
+  </body>
+</html>
+
+<!-- perbandingan -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = 9 < 12;
+      console.log(foo);
+
+      foo = 5 < 5;
+      console.log(foo);
+
+      foo = 5 <= 5;
+      console.log(foo);
+
+      foo = 8 != 12;
+      console.log(foo);
+
+      foo = 15 == 12;
+      console.log(foo);
+
+      foo = 15 === 15;
+      console.log(foo);
+
+      foo = 0.3 === 3e-1;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- perbandingan_antar_tipe -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+      foo = "a" < "b";
+      console.log(foo);
+
+      foo = "a" < "A";
+      console.log(foo);
+
+      foo = "reva" < "revika";
+      console.log(foo);
+
+      foo = false < true;
+      console.log(foo);
+
+      foo = "joni" == 12;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- perbandingan_identik_dengan -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = 9 == "9";
+      console.log(foo); // true
+
+      foo = 9 === "9";
+      console.log(foo); // false
+
+      foo = true == 1;
+      console.log(foo); // true
+
+      foo = true === 1;
+      console.log(foo); // false
+
+      foo = false == 0;
+      console.log(foo); // true
+
+      foo = false === 0;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- perbandingan truthy_falsy -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = "" == "0";
+      console.log(foo); // false
+
+      foo = 0 == "";
+      console.log(foo); // true
+      foo = 0 == "0";
+      console.log(foo); // true
+
+      foo = false == "false";
+      console.log(foo); // false
+
+      foo = false == "0";
+      console.log(foo); // true
+
+      foo = false == undefined;
+      console.log(foo); // false
+
+      foo = false == null;
+      console.log(foo); // false
+
+      foo = null == undefined;
+      console.log(foo); // true
+
+      foo = " \t\r\n " == 0;
+      console.log(foo); // true
+    </script>
+  </body>
+</html>
+
+<!-- logika -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = true && false;
+      console.log(foo);
+
+      foo = true || false;
+      console.log(foo);
+
+      foo = !false;
+      console.log(foo);
+
+      foo = true || (true && false);
+      console.log(foo);
+
+      foo = (false && true) || true;
+      console.log(foo);
+    </script>
+  </body>
+</html>
+
+<!-- short_circuit_evaluation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = true || false || false;
+      console.log(foo); // true
+
+      foo = false && true && true;
+      console.log(foo); // false
+    </script>
+  </body>
+</html>
+
+<!-- short_circuit_evaluation2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let bar = true; //false;
+      let foo = bar && console.log("Hello Indonesia");
+    </script>
+  </body>
+</html>
+
+<!-- logika non_boolean -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+      foo = "Duniailkom" || "JavaScript";
+      console.log(foo); // Duniailkom
+
+      foo = "Duniailkom" && "JavaScript";
+      console.log(foo); // JavaScript
+
+      foo = true || "JavaScript";
+      console.log(foo); // true
+
+      foo = false || "JavaScript";
+      console.log(foo); // JavaScript
+
+      foo = "JavaScript" && false;
+      console.log(foo); // false
+
+      foo = false && "JavaScript";
+      console.log(foo); // false
+
+      foo = false || (false && true) || "JavaScript";
+      console.log(foo); // JavaScript
+
+      foo = true || (false && true) || "JavaScript";
+      console.log(foo); // true
+    </script>
+  </body>
+</html>
+
+<!-- penyambungan string -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo, bar, baz;
+
+      foo = "Saya" + " sedang" + " belajar";
+      console.log(foo);
+
+      bar = "angka " + 1 + " dan " + 2;
+      console.log(bar);
+
+      foo = "indonesia ";
+      bar = "merdeka ";
+      baz = `1945 `;
+      hasil = foo + bar + baz;
+      console.log(hasil);
+    </script>
+  </body>
+</html>
+
+<!-- penyambungan string 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo, bar, baz;
+      let siswa = ["paijo", "ucup", "intan", "roni", "dinda"];
+
+      foo = siswa[0] + " mendapat juara " + 1 + " dikelas";
+      console.log(foo);
+
+      bar = siswa[2] + " adalah bestienya " + siswa[4];
+      console.log(bar);
+
+      baz =
+        siswa[1] +
+        ` dan ` +
+        siswa[3] +
+        " mendapatkan nilai " +
+        5 * 20 +
+        " saat ujian MM";
+      console.log(baz);
+    </script>
+  </body>
+</html>
+
+<!-- penyambungan string 3 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo, bar, baz;
+      let siswa = ["paijo", "ucup", "intan", "roni", "dinda"];
+
+      foo = `${siswa[0]} mendapat juara 1 dikelas `;
+      console.log(foo);
+
+      bar = `${siswa[2]} adalah bestienya ${siswa[4]}`;
+      console.log(bar);
+
+      baz = `${siswa[1]} dan ${siswa[3]} mendapatkan nilai ${
+        5 * 20
+      } saat ujian MM `;
+      console.log(baz);
+    </script>
+  </body>
+</html>
+
+<!-- penyambungan_string_problem -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo;
+
+      foo = 10 + 10 + 9;
+      console.log(foo); // 29
+
+      foo = "10" + 10 + 9;
+      console.log(foo); // 10109
+
+      foo = 10 + "10" + 9;
+      console.log(foo); // 10109
+
+      foo = 10 + 10 + "9";
+      console.log(foo); // 209
+    </script>
+  </body>
+</html>
+
+<!-- bitwise -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 0b10101010; // desimal 170
+      let b = 0b11011110; // desimal 222
+
+      console.log(a); // 170
+      console.log(b); // 222
+
+      let foo;
+      foo = a & b;
+      console.log(foo); // 138 desimal = 1000 1010 biner
+
+      foo = a | b;
+      console.log(foo); // 254 desimal = 1111 1110 biner
+
+      foo = a ^ b;
+      console.log(foo); // 116 desimal = 0111 0100 biner
+
+      foo = ~a;
+      console.log(foo); // -171 desimal
+
+      foo = a >> 2;
+      console.log(foo); // 42 desimal = 0010 1010 biner
+
+      foo = a << 3;
+      console.log(foo); // 1360 desimal = 0101 0101 0000 biner
+    </script>
+  </body>
+</html>
+
+<!-- assignment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 12;
+      let b = "Belajar";
+      a = a + 10;
+      a = a + a + 5;
+      b = b + " JavaScript";
+      b = b + " dari buku JavaScript Uncover";
+      console.log(a); // 49
+      console.log(b); // Belajar JavaScript dari buku JavaScript Uncover
+    </script>
+  </body>
+</html>
+
+<!-- assigment gabungan -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 12;
+      let b = "Belajar";
+      a += 10;
+      a += a + 5;
+
+      console.log(a); // 49
+
+      b += " JavaScript";
+      b += " dari buku JavaScript Uncover";
+      console.log(b); // Belajar JavaScript dari buku JavaScript Uncover
+
+      a /= 7;
+      console.log(a); // 7
+
+      a -= 5;
+      console.log(a); // 2
+    </script>
+  </body>
+</html>
+
+<!-- spread operator -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nilai1 = ["a", "b", "c", "d"];
+      console.log(nilai1);
+      // Array [ "a", "b", "c", "d" ]
+
+      let nilai2 = [1, 2, 3, 4];
+      console.log(nilai2);
+      // Array [ 1, 2, 3, 4 ]
+
+      let nilai3 = [...nilai1, "e", "f"];
+      console.log(nilai3);
+      // Array [ "a", "b", "c", "d", "e", "f" ]
+
+      let nilai4 = [0, ...nilai2, 5, 6];
+      console.log(nilai4);
+      // Array [ 0, 1, 2, 3, 4, 5, 6 ]
+
+      let nilai5 = [...nilai2, ...nilai3];
+      console.log(nilai5);
+      // Array [ 1, 2, 3, 4, "a", "b", "c", "d", "e", "f" ]
+    </script>
+  </body>
+</html>
+
+<!-- spread operator object -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "Eka",
+        umur: 19,
+        jurusan: "Teknik Informatika",
+      };
+
+      let mahasiswa1 = {
+        ...mahasiswa,
+        umur: 20,
+        tempatLahir: "Jakarta",
+      };
+
+      console.log(mahasiswa1);
+      // {nama: "Eka", umur: 20, jurusan: "Teknik Informatika",
+      // tempatLahir: "Jakarta"}
+    </script>
+  </body>
+</html>
+
+<!-- if hari senin -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let hari = "senin";
+
+      if (hari === "senin") {
+        console.log("saatnya kerja ...");
+        console.log("saatnya makan ...");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- if admin -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = "admin";
+
+      if (user === "admin") {
+        console.log("selamat datang admin");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- validasi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let username = "bima";
+
+      if (typeof username === "string") {
+        console.log("username valid...");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- if_else hari -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let hari = "senin";
+
+      if (hari === "selasa") {
+        console.log("saatnya tidur");
+      } else {
+        console.log("saatnya kerja");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- if_else validasi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let username = 133;
+
+      if (typeof username === "string") {
+        console.log("username valid");
+      } else {
+        console.log("validasi gagal");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- if_else_if validasi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let username = 13.3;
+
+      if (typeof username === "string") {
+        console.log("username huruf");
+      } else if (typeof username === "number") {
+        console.log("username angka");
+      } else {
+        console.log("uername bukan huruf dan angka");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- if_bersarang -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = 7;
+      console.log("nilai foo = " + foo);
+
+      if (typeof foo === "number") {
+        console.log("foo bertipe number");
+
+        if (foo >= 10) {
+          console.log("nilai foo besar dari 10");
+        } else {
+          console.log("nilai foo kecil dari 10");
+        }
+      } else if (typeof foo === "string") {
+        console.log("foo bertipe string");
+      } else {
+        console.log("foo bukan bertipe number maupun string");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- if bersarang alternatif -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = "duniailkom";
+      console.log("nilai foo = " + foo);
+
+      if (typeof foo === "number" && foo >= 10) {
+        console.log("foo bertipe number");
+        console.log("nilai foo besar dari 10");
+      } else if (typeof foo === "number" && foo < 10) {
+        console.log("foo bertipe number");
+        console.log("nilai foo kecil dari 10");
+      } else if (typeof foo === "string") {
+        console.log("foo bertipe string");
+      } else {
+        console.log("foo bukan bertipe number maupun string");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- if web -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let web = "duniailkom";
+
+      if (web === "google") {
+        console.log('<a href="https://www.google.com">Website Google</a>');
+      } else if (web === "facebook") {
+        console.log('<a href="https://www.facebook.com">Website Facebook</a>');
+      } else if (web === "twitter") {
+        console.log('<a href="https://www.twitter.com">Website Twitter</a>');
+      } else if (web === "duniailkom") {
+        console.log("https://www.duniailkom.com Website Duniailkom");
+      } else {
+        console.log("Website tidak terdaftar");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- switch -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let website = "google";
+
+      switch (website) {
+        case "google":
+          console.log('<a href="https://www.google.com">Website Google</a>');
+          break;
+
+        case "facebook":
+          console.log(
+            '<a href="https://www.facebook.com">Website Facebook</a>'
+          );
+          break;
+
+        case "twitter":
+          console.log('<a href="https://www.twitter.com">Website Twitter</a>');
+          break;
+
+        default:
+          console.log("Website tidak terdaftar");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- switch nilai -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nilai = 6;
+
+      switch (nilai) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+          console.log("Selama ini ngapain aja bro?");
+          break;
+        case 6:
+        case 7:
+        case 8:
+          console.log("Belajar lebih giat lagi!");
+          break;
+        case 9:
+        case 10:
+          console.log("Pertahankan!");
+          break;
+        default:
+          console.log("Masukkan angka 1 - 10");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- switch nilai rapi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nilai = 9;
+
+      switch (nilai) {
+        case 1:
+          console.log("Selama ini ngapain aja bro?");
+          break;
+        case 2:
+          console.log("Selama ini ngapain aja bro?");
+          break;
+        case 3:
+          console.log("Selama ini ngapain aja bro?");
+          break;
+        case 4:
+          console.log("Selama ini ngapain aja bro?");
+          break;
+        case 5:
+          console.log("Selama ini ngapain aja bro?");
+          break;
+        case 6:
+          console.log("Belajar lebih giat lagi!");
+          break;
+        case 7:
+          console.log("Belajar lebih giat lagi!");
+          break;
+        case 8:
+          console.log("Belajar lebih giat lagi!");
+          break;
+        case 9:
+          console.log("Pertahankan!");
+          break;
+        case 10:
+          console.log("Pertahankan!");
+          break;
+        default:
+          console.log("Masukkan angka 1 - 10");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- operator conditional if else -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let jumlah_barang = 1000;
+      let total;
+
+      if (jumlah_barang > 500) {
+        total = jumlah_barang * 100;
+      } else {
+        total = jumlah_barang * 150;
+      }
+
+      console.log(total); // 100000
+    </script>
+  </body>
+</html>
+
+<!-- operator conditional -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let jumlah_barang = 501;
+      let total;
+
+      total = jumlah_barang > 500 ? jumlah_barang * 100 : jumlah_barang * 150;
+      console.log(total);
+    </script>
+  </body>
+</html>
+
+<!-- operator conditional 2-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = "admin";
+
+      let hak_akses = user === "admin" ? true : false;
+
+      if (hak_akses) {
+        console.log("Selamat datang admin...");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- logical operator -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = "rudi";
+      let password = "qwerty";
+
+      if (user === "admin" && password === "qwerty") {
+        console.log("welcome admin");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- short circuit conditional 1 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user;
+
+      user = "rudi";
+      user === "admin" && console.log("welcome admin");
+
+      user = "admin";
+      user === "admin" && console.log("welcome admin");
+    </script>
+  </body>
+</html>
+
+<!-- short circuit conditional 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = "admin";
+
+      user === "admin" ? console.log("welcome admin") : "";
+      user === "admin" && console.log("welcome admin");
+    </script>
+  </body>
+</html>
+
+<!-- short circuit conditional 3 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = "admin";
+      let password = "qwerty";
+
+      user === "admin" && password === 12345 && console.log("welcome admin");
+
+      user === "admin" && password === "qwerty" && console.log("welcome admin");
+    </script>
+  </body>
+</html>
+
+<!-- for_hello indonesia -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i <= 10; i++) {
+        console.log("Hello  Indonesia");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for_hello indonesia_counter -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i < 10; i++) {
+        console.log("Hello  Indonesia " + i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for hello indonesia menurun -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 10; i >= 1; i--) {
+        console.log("Hello  Indonesia " + i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for hello indonesia_kelipatan 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 2; i <= 20; i = i + 2) {
+        console.log("Hello  Indonesia " + i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for latihan kelipatan 5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 20; i >= 0; i = i - 5) {
+        console.log(i + " * 5 = " + i * 5);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for tanpa start -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 1;
+
+      for (; i <= 5; i++) {
+        console.log("Hello word " + i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for tanpa start dan increment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 1;
+
+      for (; i <= 10; ) {
+        console.log("hello word " + i);
+        i++;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- nested loop (perulangan bersarang) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i, j;
+
+      for (i = 1; i <= 4; i++) {
+        for (j = 1; j <= 2; j++) {
+          console.log(
+            "Variabel i bernilai: " + i + ", Variabel j bernilai: " + j
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- infinity loop -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 20; i > 10; i++) {
+        console.log("hello javascipt " + i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for break and continue -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i <= 10; i++) {
+        if (i === 5) {
+          // break;
+          continue;
+        }
+        console.log("hello mars " + i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- while hello mars -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 1;
+      while (i <= 10) {
+        console.log("hello mars " + i);
+        i++;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- while kelipatan 5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 100;
+      while (i >= 0) {
+        console.log(i + " * 5 = " + i * 5);
+        i = i - 5;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- while break -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 1;
+
+      while (i <= 5) {
+        if (i === 4) {
+          break;
+        }
+        console.log("hello earth " + i);
+        i++;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- do while -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 1;
+      do {
+        console.log("hello bima " + i);
+        i++;
+      } while (i <= 10);
+    </script>
+  </body>
+</html>
+
+<!-- do while pangkat -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 1;
+      do {
+        console.log(i + " kuadrat = " + i * i);
+        i++;
+      } while (i <= 10);
+    </script>
+  </body>
+</html>
+
+<!-- do while run once -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 99;
+      do {
+        console.log(i + " kuadrat = " + i * i);
+        i++;
+      } while (i <= 10);
+    </script>
+  </body>
+</html>
+
+<!-- perulangan menampilkan erray -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswa = ["dodi", "dwi", "lestari", "santi", "santo"];
+
+      for (let i = 0; i < 5; i++) {
+        console.log(siswa[i]);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- perulangan array_length -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswa = ["yanti", "yanto", "tini", "tono", "agus"];
+      let jumlah_siswa = siswa.length;
+
+      console.log("Jumlah siswa = " + jumlah_siswa);
+
+      for (let i = 0; i < jumlah_siswa; i++) {
+        console.log(siswa[i]);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for of_ array -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswa = ["yanti", "yanto", "tini", "tono", "agus"];
+
+      for (let i of siswa) {
+        console.log(i);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for of set -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswaSet = new Set(["santi", "santo", "yanti", "yanto", "ucup"]);
+
+      for (let siswa of siswaSet) {
+        console.log(siswa);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for of map -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswaMap = new Map([
+        ["satu", "santi"],
+        ["dua", "santo"],
+        ["tiga", "yanti"],
+        ["empat", "yanto"],
+        ["lima", "ucup"],
+      ]);
+
+      for (let siswa of siswaMap) {
+        console.log(siswa);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for_of_map_key_value -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswaMap = new Map([
+        ["satu", "santi"],
+        ["dua", "santo"],
+        ["tiga", "yanti"],
+        ["empat", "yanto"],
+        ["lima", "ucup"],
+      ]);
+
+      for (let siswa of siswaMap) {
+        console.log(`siswa ke-${siswa[0]} adalah ${siswa[1]}`);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- function terimakasih -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kasih() {
+        console.log("Terimakasih");
+        console.log("Thankyou");
+        console.log("Arigato Gozaimasu");
+        console.log("Shkran");
+      }
+      kasih();
+    </script>
+  </body>
+</html>
+
+<!-- function terimakasih return variable -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kasih() {
+        return "Terimakasih";
+      }
+
+      let ucap = kasih();
+      console.log(ucap);
+
+      //console.log(kasih());
+    </script>
+  </body>
+</html>
+
+<!-- function_terimakasih_return_stop -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kasih() {
+        return "shkran";
+        console.log("thankyou"); // tidak akan pernah di eksekusi
+      }
+      console.log(kasih());
+    </script>
+  </body>
+</html>
+
+<!-- function_terimakasih_return_variabel -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kasih() {
+        let ucap = "Arigato Gozaimasu";
+        return ucap;
+      }
+      console.log(kasih());
+    </script>
+  </body>
+</html>
+
+<!-- function_terimakasih_return_array -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kasih() {
+        let ucap = ["TerimaKasih", "Thankyou", "Arigato Gozaimas", "Shkran"];
+        return ucap;
+      }
+
+      let salam = kasih();
+      console.log(salam);
+    </script>
+  </body>
+</html>
+
+<!-- function_terimakasih_return_array_for_let-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kasih() {
+        let ucap = ["TerimaKasih", "Thankyou", "Arigato Gozaimas", "Shkran"];
+        return ucap;
+      }
+
+      let salam = kasih();
+      for (let value of salam) {
+        console.log(value);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- function_parameter_argument -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function pagi(siapa) {
+        return "Selamat Pagi " + siapa;
+      }
+
+      let salam = pagi("Jakarta");
+      console.log(salam);
+    </script>
+  </body>
+</html>
+
+<!-- function_parameter_argument calling-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function pagi(siapa) {
+        return "Selamat Pagi " + siapa;
+      }
+
+      console.log(pagi("Medan"));
+      console.log(pagi("Aceh"));
+      console.log(pagi("Pekan Baru"));
+    </script>
+  </body>
+</html>
+
+<!-- function 2 parameter -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function salam(kapan, siapa) {
+        return "Selamat " + kapan + " " + siapa;
+      }
+
+      console.log(salam("Datang", "kawan"));
+      console.log(salam("siang", "kawan"));
+      console.log(salam("tersenyum", "kawan"));
+    </script>
+  </body>
+</html>
+
+<!-- function argumen rata2  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function rata2(a, b, c, d, e) {
+        let hasil = (a + b + c + d + e) / 4;
+        return hasil;
+      }
+
+      let nilai1 = rata2(8, 5, 2, 4, 8);
+      console.log(nilai1);
+
+      let nilai2 = rata2(90, 78, 95, 76, 94);
+      console.log(nilai2);
+
+      let nilai3 = rata2(nilai1, 55, 60, nilai2, 94);
+      console.log(nilai3);
+    </script>
+  </body>
+</html>
+
+<!-- function argumen rata2 error -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function rata2(a, b, c, d) {
+        let hasil = (a + b + c + d) / 4;
+        return hasil;
+      }
+
+      let nilai1 = rata2(4, 9, 5);
+      console.log(nilai1);
+
+      let nilai2 = rata2(9, 9, 9, 9, 1, 1);
+      console.log(nilai2);
+    </script>
+  </body>
+</html>
+
+<!-- function default parameter -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function rata2(a = 10, b = 10, c = 10, d = 10) {
+        let hasil = (a + b + c + d) / 4;
+        return hasil;
+      }
+
+      let nilai1 = rata2();
+      console.log(nilai1);
+    </script>
+  </body>
+</html>
+
+<!-- function_rest_parameter -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function angka(...arg) {
+        console.log(arg[0]);
+        console.log(arg[1]);
+        console.log(arg[2]);
+        console.log(arg[3]);
+      }
+
+      angka(4, 8, 3, 7);
+    </script>
+  </body>
+</html>
+
+<!-- function_rest_parameter 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function angka(a, b, ...sisa) {
+        console.log(a);
+        console.log(b);
+        console.log(sisa);
+      }
+
+      angka(2, 9, 4, 6);
+    </script>
+  </body>
+</html>
+
+<!-- function_rest_parameter_rata2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function rata2(...semuaArg) {
+        let totalArg = semuaArg.length;
+        let hasil = 0;
+        for (let i of semuaArg) {
+          hasil = hasil + i;
+        }
+        return hasil / totalArg;
+      }
+
+      let a = rata2(1, 9);
+      console.log(a); // 5
+
+      let b = rata2(4, 8, 3, 7);
+      console.log(b); // 5.5
+
+      let c = rata2(14, 34, 17, 55, 98, 22, 26);
+      console.log(c); // 38
+    </script>
+  </body>
+</html>
+
+<!-- variabel scope -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = "hello eoe";
+
+      function foo() {
+        console.log(a);
+      }
+
+      foo();
+    </script>
+  </body>
+</html>
+
+<!-- variable scope 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function foo() {
+        let a = "Belajar JavaScript";
+      }
+
+      foo();
+      console.log(a);
+    </script>
+  </body>
+</html>
+
+<!-- variable scope 3 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function foo() {
+        let a = "Belajar JavaScript";
+        console.log(a);
+      }
+
+      foo();
+      console.log(a);
+    </script>
+  </body>
+</html>
+
+<!-- scope hoisting -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = "Belajar Pemrograman Web";
+
+      function foo() {
+        console.log("a di dalam function: " + a);
+      }
+
+      foo();
+      console.log("a di luar function: " + a);
+    </script>
+  </body>
+</html>
+
+<!-- pembuatan object kosong -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let foo = {};
+      console.log(typeof foo);
+    </script>
+  </body>
+</html>
+
+<!-- property object mahasiswa -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "Andi",
+        jurusan: "Teknik Informatika",
+        ipk: 3.67,
+        semester: 4,
+      };
+
+      console.log(mahasiswa.nama);
+      console.log(mahasiswa.jurusan);
+      console.log(mahasiswa["ipk"]);
+      console.log(mahasiswa["semester"]);
+    </script>
+  </body>
+</html>
+
+<!-- pembuatan_object_property_string -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "Andi",
+        jurusan: "Teknik Informatika",
+        ipk: 3.67,
+        semester: 4,
+      };
+
+      console.log(mahasiswa.nama);
+      console.log(mahasiswa.jurusan);
+      console.log(mahasiswa["ipk"]);
+      console.log(mahasiswa["semester"]);
+    </script>
+  </body>
+</html>
+
+<!-- nama_property_dengan_spasi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        "nama lengkap": "Andi Wibowo",
+        "jurusan kuliah": "Teknik Informatika",
+        "nilai ipk": 3.67,
+        "semester terakhir": 4,
+      };
+
+      console.log(mahasiswa["nama lengkap"]); // Andi Wibowo
+      console.log(mahasiswa["jurusan kuliah"]); // Teknik Informatika
+      console.log(mahasiswa["nilai ipk"]); // 3.67
+      console.log(mahasiswa["semester terakhir"]); // 4
+    </script>
+  </body>
+</html>
+
+<!-- pengaksesan property angka -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let absensi = {
+        1: "tini",
+        2: "tono",
+        3: "santi",
+        4: "santo",
+      };
+
+      console.log(absensi[1]);
+      console.log(absensi[2]);
+      console.log(absensi["3"]);
+      console.log(absensi["4"]);
+    </script>
+  </body>
+</html>
+
+<!-- penambahan property dot notation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {};
+
+      mahasiswa.nama = "Andi";
+      mahasiswa.jurusan = "Teknik Informatika";
+      mahasiswa.ipk = 3.67;
+      mahasiswa.semester = 4;
+    </script>
+  </body>
+</html>
+
+<!-- penambahan property bracket notation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {};
+
+      mahasiswa["nama lengkap"] = "Andi";
+      mahasiswa["jurusan kuliah"] = "Teknik Informatika";
+      mahasiswa["nilai ipk"] = 3.67;
+      mahasiswa["semester terakhir"] = 4;
+    </script>
+  </body>
+</html>
+
+<!-- penambahan property mahasiswa -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "teknik informatika",
+      };
+
+      mahasiswa.ipk = 3.64;
+      mahasiswa.semester = 4;
+
+      console.log(mahasiswa.nama);
+      console.log(mahasiswa.jurusan);
+      console.log(mahasiswa.ipk);
+      console.log(mahasiswa.semester);
+    </script>
+  </body>
+</html>
+
+<!-- mengubaha nilai property -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "teknik informatika",
+        ipk: 3.67,
+        semester: 4,
+      };
+
+      console.log(mahasiswa.nama);
+      mahasiswa.nama = "joko";
+      console.log(mahasiswa.nama);
+
+      console.log(mahasiswa["ipk"]);
+      mahasiswa["ipk"] = 2.79;
+      console.log(mahasiswa["ipk"]);
+    </script>
+  </body>
+</html>
+
+<!-- membuat method -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mobil = {
+        nama: "Supra MK 4",
+        tipe: "Honda",
+        harga: 500000000,
+        warna: "putih",
+        hidupkan: function () {
+          return "Mesin diHidupkan";
+        },
+      };
+
+      console.log(mobil.hidupkan());
+    </script>
+  </body>
+</html>
+
+<!-- membuat method bracket -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mobil = {
+        nama: "Supra MK 4",
+        tipe: "Honda",
+        harga: 500000000,
+        warna: "putih",
+        hidupkan: function () {
+          return "Mesin diHidupkan";
+        },
+      };
+
+      console.log(mobil["hidupkan"]());
+    </script>
+  </body>
+</html>
+
+<!-- membuat method shorthand -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mobil = {
+        nama: "Supra MK 4",
+        tipe: "Honda",
+        harga: 500000000,
+        warna: "putih",
+        hidupkan() {
+          return "Mesin diHidupkan";
+        },
+      };
+
+      console.log(mobil.hidupkan());
+    </script>
+  </body>
+</html>
+
+<!-- membuat method arrow -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mobil = {
+        nama: "Supra MK 4",
+        tipe: "Honda",
+        harga: 500000000,
+        warna: "putih",
+        hidupkan: () => "Mesin diHidupkan",
+      };
+
+      console.log(mobil.hidupkan());
+    </script>
+  </body>
+</html>
+
+<!-- membuat method argumen 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mobil = {
+        nama: "Supra MK 4",
+        tipe: "Honda",
+        harga: 500000000,
+        warna: "putih",
+      };
+
+      mobil.hidupkan = () => "Mesin dihidupkan";
+      mobil.pergi = (tempat) => `Pergi ke ${tempat}`;
+
+      console.log(mobil.hidupkan()); // Mesin dihidupkan
+      console.log(mobil.pergi("Bali")); // Pergi ke Bali
+    </script>
+  </body>
+</html>
+
+<!-- penimpaan method -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mobil = {
+        nama: "Supra MK 4",
+        tipe: "Honda",
+        harga: 500000000,
+        warna: "putih",
+        pergi: (tempat) => `Pergi ke ${tempat}`,
+      };
+
+      console.log(mobil.pergi("Medan")); // Pergi ke Medan
+
+      mobil.pergi = "Methodnya sudah tertimpa..";
+
+      console.log(mobil.pergi("Medan")); // error!
+      // Uncaught TypeError: mobil.pergi is not a function
+    </script>
+  </body>
+</html>
+
+<!-- nested object -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "RPL",
+        ipk: {
+          1: 3.91,
+          2: 2.73,
+          3: 1.92,
+        },
+        semester: 4,
+      };
+
+      console.log(mahasiswa.ipk[1]);
+      console.log(mahasiswa.ipk[3]);
+    </script>
+  </body>
+</html>
+
+<!-- nested object2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "RPL",
+        ipk: {
+          semester1: 3.91,
+          semester2: 2.73,
+          semester3: 1.92,
+        },
+        semester: 4,
+      };
+
+      console.log(mahasiswa.ipk.semester1);
+      console.log(mahasiswa.ipk.semester3);
+    </script>
+  </body>
+</html>
+
+<!-- object reference primitive -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let siswa = "andi";
+      let siswabaru = siswa;
+
+      console.log(siswa);
+      console.log(siswabaru);
+
+      siswabaru = "joko";
+      console.log(siswa);
+      console.log(siswabaru);
+
+      siswa = "vino";
+      console.log(siswa);
+      console.log(siswabaru);
+    </script>
+  </body>
+</html>
+
+<!-- object reference object -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "teknik informatika",
+      };
+
+      let mahasiswabaru = mahasiswa;
+
+      console.log(mahasiswa.nama);
+      console.log(mahasiswabaru.nama);
+
+      mahasiswa.nama = "joko";
+      console.log(mahasiswa.nama);
+      console.log(mahasiswabaru.nama);
+
+      mahasiswabaru.jurusan = "akutansi";
+      console.log(mahasiswa.jurusan);
+      console.log(mahasiswabaru.jurusan);
+    </script>
+  </body>
+</html>
+
+<!-- object_reference_perbandingan_true -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "RPL",
+      };
+
+      let mahasiswabaru = mahasiswa;
+
+      console.log(mahasiswa == mahasiswabaru);
+      console.log(mahasiswa === mahasiswabaru);
+    </script>
+  </body>
+</html>
+
+<!-- object_reference_perbandingan_false -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "RPL",
+      };
+
+      let mahasiswabaru = {
+        nama: "andi",
+        jurusan: "RPL",
+      };
+
+      console.log(mahasiswa == mahasiswabaru);
+      console.log(mahasiswa === mahasiswabaru);
+    </script>
+  </body>
+</html>
+
+<!-- copy spread operator -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        jurusan: "RPL",
+      };
+
+      let mahasiswabaru = { ...mahasiswa };
+
+      mahasiswabaru.jurusan = "manajemen bisnis";
+
+      console.log(mahasiswa.jurusan);
+      console.log(mahasiswabaru.jurusan);
+    </script>
+  </body>
+</html>
+
+<!-- copy_spread_operator_problem -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        nilaiIpk: {
+          sem1: 3.94,
+          sem2: 3.43,
+          sem3: 2.14,
+        },
+      };
+
+      let mahasiswabaru = { ...mahasiswa };
+
+      mahasiswabaru.nilaiIpk.sem1 = 2.45;
+
+      console.log(mahasiswa.nilaiIpk.sem1); // 2.45
+      console.log(mahasiswabaru.nilaiIpk.sem1); // 2.45
+    </script>
+  </body>
+</html>
+
+<!-- copy json -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mahasiswa = {
+        nama: "andi",
+        nilaiIpk: {
+          sem1: 3.94,
+          sem2: 3.43,
+          sem3: 2.14,
+        },
+      };
+
+      let mahasiswabaru = JSON.parse(JSON.stringify(mahasiswa));
+
+      mahasiswabaru.nilaiIpk.sem1 = 3.99;
+
+      console.log(mahasiswa.nilaiIpk.sem1);
+      console.log(mahasiswabaru.nilaiIpk.sem1);
+    </script>
+  </body>
+</html>
+
+<!-- for in -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let kereta = {
+        nama: "CBR 25R",
+        tipe: "Yamaha",
+        harga: 200000000,
+        warna: "hitam",
+      };
+
+      for (let prop in kereta) {
+        console.log(kereta[prop]);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for in 2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let kereta = {
+        nama: "CBR 25R",
+        tipe: "Yamaha",
+        harga: 200000000,
+        warna: "hitam",
+      };
+
+      for (let prop in kereta) {
+        console.log("isi property " + prop + " = " + kereta[prop]);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- for in method -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let kereta = {
+        nama: "CBR 25R",
+        tipe: "Yamaha",
+        harga: 200000000,
+        warna: "hitam",
+        hidupkan: function () {
+          return "mesin di hidupkan";
+        },
+      };
+
+      for (let prop in kereta) {
+        console.log("isi property " + prop + " = " + kereta[prop]);
+      }
+    </script>
+  </body>
+</html>

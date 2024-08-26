@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const bagi = (total, angka) => total / angka;
+
+      let foo = [49, 7, 2];
+      console.log(foo.reduce(bagi)); // 3.5
+      console.log(foo.reduceRight(bagi)); // 0.0058309037900874635
+    </script>
+  </body>
+</html>
